@@ -14,12 +14,14 @@ public class Cliente {
     private String nombre;
     private String direccion;
     private int telefono;
+     private ArrayList<Renta> listaRenta;
 
-    public Cliente(int dni, String nombre, String direccion, int telefono) {
+    public Cliente(int dni, String nombre, String direccion, int telefono,ArrayList<Renta> listaRenta) {
              this.dni = dni;
              this.nombre = nombre;
              this.direccion = direccion;
              this.telefono = telefono;
+             this.listaRenta = listaRenta;
     }
 
     public String getNombre() {
@@ -37,8 +39,11 @@ public class Cliente {
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+     public void setListaRenta(ArrayList<Renta> listaRenta) {
+        this.listaRenta = listaRenta;
+    }
      public void mostrarDatos(){
-        System.out.println("\nDNI: " +this.dni+"Nombre: " +this.nombre+ "Direccion: " +this.direccion+ "telefono: "+this.telefono );
+        System.out.println("\nDNI: " +this.dni+"Nombre: " +this.nombre+ "Direccion: " +this.direccion+ "telefono: "+this.telefono + "Renta: " +this.listaRenta);
     }
 }
 
