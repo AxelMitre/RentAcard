@@ -1,2 +1,2 @@
 # RentAcard
-Montenegrp, Mangialavore, Mitre, Villanueva
+# Montenegro, Mangialavore, Mitre, Villanueva
